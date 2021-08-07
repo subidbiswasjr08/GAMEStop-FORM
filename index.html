@@ -1,0 +1,228 @@
+<html lang="en">
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <h1 id="title" class="text-center">GAMEStop Survey Form</h1>
+        <p id="description" class="description text-center">
+            Thank you for interest in our survey!
+        </p>
+        </header>
+        <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Username</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your username"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+            >
+            <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+            />
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your gaming preference?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Choose Genre</option>
+            <option value="student">RPG</option>
+            <option value="job">FPS</option>
+            <option value="learner">Racing</option>
+            <option value="preferNo">Arcade</option>
+            <option value="other">Story Mode</option>
+            <option value="other">Other</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <p>Would you recommend GAMEStop to a friend?</p>
+            <label>
+            <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+            />Definitely</label
+            >
+            <label>
+            <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+            />Maybe</label
+            >
+    
+            <label
+            ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+            />Not sure</label
+            >
+        </div>
+    
+        <div class="form-group">
+            <p>
+            What is your favorite feature of GAMEStop?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Weekly Free Games</option>
+            <option value="projects">Add Ons/Mod Extensions</option>
+            <option value="community">Community of GAMEStoper's</option>
+            <option value="openSource">On Sale Discounts</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <p>Did You make a Purchase?</p>
+                <label>
+                <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />Yes</label
+                >
+                <label>
+                <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                />No</label
+                >
+        </div>
+        <div class="form-group">
+            <p>
+            Did You Buy Our TOP GAMEStop Featured Games?
+            <span class="clue">(Check all that apply)</span>
+            </p>
+    
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />DAY'S GONE
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />ASSASINS CREED: ODYSSEY
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />METRO: EXODUS
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />GTA ONLINE
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />RED DEAD REDEMPTION 2
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />HITMAN 3
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />ASSASINS CREED: VALHALLA
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+                />THE WITCHER 3: WILD HUNT(+ 18 DLCs)
+            </label>
+    
+        <div class="form-group">
+            <p>Give Us a Review</p>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your review here..."
+            ></textarea>
+        </div>
+    
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+            Submit
+            </button>
+        </div>
+        </form>
+        <div class="footer-author">
+            <p >🦇Written by🦇</p>
+            <p>© 2021 Subid Biswas.</p>
+            <a href="https://github.com/subidbiswasjr08">GitHub</a>
+            <a>|</a>
+            <a href="https://www.freecodecamp.org/subid_biswas">freeCodeCamp</a>
+        </div>
+    </div>
+</body>
+
+</html>
